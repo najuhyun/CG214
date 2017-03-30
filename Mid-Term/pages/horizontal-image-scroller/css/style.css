@@ -1,0 +1,20 @@
+html, body {
+  border: 0; /* Reset border */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  overflow: hidden; /* Prevent overflow */
+}
+
+#container {
+  width: 100vw; /* Equal to browser width */
+  height: 100vh; /* Equal to browser height */
+  overflow-x: scroll; /* Allow scroll x-axis */
+  overflow-y: hidden; /* Disable scroll y-axis */
+  white-space: nowrap; /* Display images on single line */
+}
+
+#container img {
+  height: 100%; /* Image height equal to #container */
+  width: auto;
+  margin-left: -4px; /* Remove white space between images */
+}

@@ -1,0 +1,156 @@
+html,
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+
+.show-menu {
+  cursor: pointer;
+}
+
+input.checkbox-menu[type="checkbox"] {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input.checkbox-menu[type="checkbox"]:checked ~ div.menu-block {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-icon {
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 0.5em;
+  vertical-align: middle;
+}
+
+.menu-block {
+  display: inline-block;
+  opacity: 0;
+  vertical-align: middle;
+  visibility: hidden;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+ul.navUL {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.navUL li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+ul.navUL li a {
+  color: #999999;
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+}
+
+ul.navUL li a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/*zoom*/
+body {
+  background: #eee;
+  padding: 4rem;
+}
+
+.title {
+  position: relative;
+  margin-bottom: -3.5rem;
+  margin-left: 4rem;
+  z-index: 1;
+}
+.title h2 {
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+
+.row {
+  position: relative;
+}
+.row .columns {
+  position: relative;
+}
+.row .columns article {
+  position: relative;
+  background: white;
+  padding: 4rem 7rem;
+  box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.03);
+  margin: 0 0 8rem;
+}
+.row .columns .image {
+  position: absolute;
+  z-index: 1;
+}
+.row .columns .image.left {
+  top: -4rem;
+  left: 0.9375rem;
+  right: -5rem;
+}
+.row .columns .image.right {
+  top: -4rem;
+  left: -5rem;
+  right: 0.9375rem;
+}
+.row .columns .image.bottom {
+  top: 4rem;
+}
+.row .columns .image img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50%;
+     object-position: 50%;
+  height: 380px;
+  width: 100%;
+  -webkit-filter: grayscale(35%);
+          filter: grayscale(35%);
+  -webkit-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.row .columns .image img:hover {
+  -webkit-filter: grayscale(0%) contrast(110%);
+          filter: grayscale(0%) contrast(110%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.65);
+}
+/*end*/
+
+/*making colums with imgs*/
+
+.images02 {
+	 float: right;
+	 width: 500px;
+	 box-sizing: none;
+	 margin: 0;
+    padding: 30px;
+
+}
+
+.images03 {
+     float: left;
+	 width: 500px;
+	 box-sizing: border-box;
+	 margin: 0px;
+     padding: 30px;
+}
