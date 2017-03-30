@@ -1,0 +1,113 @@
+html,
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  background: #eee;
+  padding: 4rem;
+}
+
+.show-menu {
+  cursor: pointer;
+}
+
+input.checkbox-menu[type="checkbox"] {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input.checkbox-menu[type="checkbox"]:checked ~ div.menu-block {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-icon {
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 0.5em;
+  vertical-align: middle;
+}
+
+.menu-block {
+  display: inline-block;
+  opacity: 0;
+  vertical-align: middle;
+  visibility: hidden;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+ul.navUL {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.navUL li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+ul.navUL li a {
+  color: #999999;
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+}
+
+ul.navUL li a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+/*image slide to right*/
+
+html, body {
+  border: 0; /* Reset border */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  overflow: hidden; /* Prevent overflow */
+}
+
+#container {
+  width: 100vw; /* Equal to browser width */
+  height: 100vh; /* Equal to browser height */
+  overflow-x: scroll; /* Allow scroll x-axis */
+  overflow-y: hidden; /* Disable scroll y-axis */
+  white-space: nowrap; /* Display images on single line */
+}
+
+#container img {
+  height: 100%; /* Image height equal to #container */
+  width: auto;
+  margin-left: -4px; /* Remove white space between images */
+}
+
+
+/*Menu ends*/
+
+
+/*logo01 {
+	width: 100%;
+	height: 50%;
+	background-size: 100px;
+	background-image: url('../images/ariana.png');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: #e8e8e8;
+    /* put the sizes and position after img url*/
+
+.div4 {
+    margin: 20px;
+    padding: 20px;
+	width: 900px;
+	height: 500px;
+	background-size: 400px;
+	background-image: url(../images/ariana.png);
+	background-position: center;
+	background-repeat: no-repeat;
+    /* put the sizes and position after img url*/
+}
